@@ -1,4 +1,4 @@
-# pwd
+# pwd.theregion.beer
 Password Generator I built a while ago because I was sick of doing it manually
 
 I have now dockerized it, and this can be run thusly. Once complete, it will be accessible at `http://localhost:8081`
