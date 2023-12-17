@@ -2,7 +2,8 @@
 FROM php:7.4-apache
 
 # Enable MySQL Stuff
-RUN docker-php-ext-install mysqli
+RUN apt update -y && apt upgrade -y
+RUN docker-php-ext-install mysqli && docker-php-ext-enable mysqli
 
 # Set the working directory to /var/www/html
 WORKDIR /var/www/html
