@@ -15,5 +15,6 @@ services:
       MYSQL_DATABASE: pwdgen
       MYSQL_USER: pwd
       MYSQL_PASSWORD: BaDA9rAarBNpPSwc
+#   to restore with full hash data, change to pwdgen-hash from just pwdgen in the volume here
     volumes:
       - ./sql/pwdgen.sql:/docker-entrypoint-initdb.d/init.sql
