@@ -18,7 +18,7 @@
 	}
 	
 	//define mysql connection
-	$servername = "localhost";
+	$servername = "db";
 	$username = "pwd";
 	$password = "BaDA9rAarBNpPSwc";
 	$dbname = "pwdgen";
