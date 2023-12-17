@@ -1,6 +1,9 @@
 # Use an official PHP runtime as a parent image
 FROM php:7.4-apache
 
+# Enable MySQL Stuff
+RUN docker-php-ext-install mysqli
+
 # Set the working directory to /var/www/html
 WORKDIR /var/www/html
 
