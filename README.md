@@ -5,6 +5,8 @@ I have now dockerized it, and this can be run thusly. Once complete, it will be 
 
 Local port can be changed in the docker-compose file for now
 
+There is also an option in docker-compose to load the old DB with full hash records from eridani
+
 ```
 git clone https://github.com/phermeys/pwd.git
 cd pwd
