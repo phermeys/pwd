@@ -1,3 +1,6 @@
+<?php
+    ob_start(); // Initiate the output buffer
+?>
 <!DOCTYPE html>
 <?php
 	
@@ -857,3 +860,6 @@ function updateTextInput5(val) {
 
 
 </body></html>
+<?php
+    ob_end_flush(); // Flush the output from the buffer
+?>
