@@ -2,12 +2,14 @@ version: '3'
 services:
   web:
     build: .
+    container_name: pwd-web
     ports:
       - "8081:80"
     depends_on:
       - db
   db:
     image: mysql:5.7
+    container_name: pwd-db
     environment:
       MYSQL_ROOT_PASSWORD: thisisasecurepasswordright?right?
       MYSQL_DATABASE: pwdgen
