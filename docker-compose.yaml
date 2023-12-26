@@ -8,7 +8,7 @@ services:
     build: .
     container_name: pwdgen
     ports:
-      - "9023:80"
+      - "8503:80"
     volumes:
       - ./mysql:/opt/sqlback pwdtest2
     restart: always
