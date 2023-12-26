@@ -1,6 +1,6 @@
 # docker compose
 version: '3'
-# docker run -d --name pwdtest2 -p 9023:80 -v ./mysql:/opt/sqlback pwdtest2
+# docker run -d --name pwdtest2 -p 8503:80 -v ./mysql:/opt/sqlback pwdtest2
 
 
 services:
@@ -10,5 +10,5 @@ services:
     ports:
       - "8503:80"
     volumes:
-      - ./mysql:/opt/sqlback pwdtest2
+      - ./mysql:/opt/sqlback
     restart: always
