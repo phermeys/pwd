@@ -3,7 +3,7 @@ Password Generator I built a while ago because I was sick of doing it manually
 
 Old version had multiple containers, new verion is single container.
 
-I have now dockerized it, and this can be run thusly. Once complete, it will be accessible at `http://localhost:9023`
+I have now dockerized it, and this can be run thusly. Once complete, it will be accessible at `http://localhost:8503`
 
 Local port can be changed in the docker-compose file for now
 
