@@ -11,7 +11,7 @@ The container also exports the current database every hour, and it exports it to
 
 The database is initialized entirely in the docker compose file, so the hash database should persist through reboots. 
 
-To deploy from fresh database with no old hashs, move the `pwdgen.sql` fil in the `mysql` folder to `pwdgen-hashs.sql` before bringing up the container.
+To deploy from fresh database with no old hashs, overwrite the `pwdgen-hashs.sql` file with the `pwdgen.sql` in the `mysql` folder to  before bringing up the container.
 
 ```
 git clone https://github.com/phermeys/pwd.git
