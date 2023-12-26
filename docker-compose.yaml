@@ -1,20 +1,14 @@
+# docker compose
 version: '3'
+# docker run -d --name pwdtest2 -p 9023:80 -v ./mysql:/opt/sqlback pwdtest2
+
+
 services:
-  web:
+  pwdgen:
     build: .
-    container_name: pwd-web
+    container_name: pwdgen
     ports:
-      - "8081:80"
-    depends_on:
-      - db
-  db:
-    image: mysql:5.7
-    container_name: pwd-db
-    environment:
-      MYSQL_ROOT_PASSWORD: thisisasecurepasswordright?right?
-      MYSQL_DATABASE: pwdgen
-      MYSQL_USER: pwd
-      MYSQL_PASSWORD: BaDA9rAarBNpPSwc
-#   to restore with full hash data, change to pwdgen-hash from just pwdgen in the volume here
+      - "9023:80"
     volumes:
-      - ./sql/pwdgen.sql:/docker-entrypoint-initdb.d/init.sql
+      - ./mysql:/opt/sqlback pwdtest2
+    restart: always
