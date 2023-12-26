@@ -1,13 +1,13 @@
 # docker compose
 version: '3'
-# docker run -d --name pwdtest2 -p 8503:80 -v ./mysql:/opt/sqlback pwdtest2
+# docker run -d --name pwd.theregion.beer -p 8503:80 -v ./mysql:/opt/sqlback pwdgen
 
 
 services:
   pwdgen:
     build: .
     image: pwdgen:latest
-    container_name: pwdgen
+    container_name: pwd.theregion.beer
     ports:
       - "8503:80"
     volumes:
