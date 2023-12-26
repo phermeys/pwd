@@ -6,6 +6,7 @@ version: '3'
 services:
   pwdgen:
     build: .
+    image: pwdgen:latest
     container_name: pwdgen
     ports:
       - "8503:80"
